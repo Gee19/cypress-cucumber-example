@@ -37,10 +37,14 @@ Feature: The Facebook
     Then I see "Facebook" in the title
 
   @another-tag-to-include @some-other-tag
-  Scenario: Different kind of opening
+  Scenario Outline: Different kind of opening
     Given I kinda open Facebook page
     Then I am very happy
 
+    Examples:
+    |user |pass|
+    |abc  |def|
+    |bcd  |efg|
 ```
 
 
